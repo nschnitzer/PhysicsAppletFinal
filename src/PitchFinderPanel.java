@@ -28,6 +28,7 @@ public class PitchFinderPanel extends JComponent implements ComponentListener
 	public PitchFinderPanel()
 	{
 		panel = new JPanel();
+		panel.add(Box.createVerticalStrut(120));
 		disp = new JLabel("The current frequency is:");
 		panel.add(disp);
 		panel.add(Box.createVerticalStrut(50));
@@ -36,7 +37,7 @@ public class PitchFinderPanel extends JComponent implements ComponentListener
 		frequency.setFont(new Font("Arial", Font.BOLD, 16));
 		panel.add(frequency);
 		frame = new JFrame();
-		frame.setPreferredSize(new Dimension(480, 200));
+		frame.setPreferredSize(new Dimension(450, 180));
 		Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
 		frame.setLocation(dim.width/2,	(int) (dim.height/2.5));
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -49,7 +50,6 @@ public class PitchFinderPanel extends JComponent implements ComponentListener
 	
 	public void showFreq(double frequency)
 	{
-		System.out.println("GOT IT: " + frequency);
 		this.frequency.setText(frequency + " Hz");
 		frame.setVisible(true);
 	}

@@ -45,7 +45,7 @@ public class PitchGenerator {
 		panel.setLayout(new GridLayout(9, 7));
 
 		// Fundamental
-		A0 = new JRadioButton("A0", true);
+		A0 = new JRadioButton("A0");
 		A0Listener a0Listener = new A0Listener();
 		A0.addActionListener(a0Listener);
 		B0 = new JRadioButton("B0");
@@ -68,7 +68,7 @@ public class PitchGenerator {
 		G0.addActionListener(g0Listener);
 
 		// 1st Octave
-		A1 = new JRadioButton("A1", true);
+		A1 = new JRadioButton("A1");
 		A1Listener a1Listener = new A1Listener();
 		A1.addActionListener(a1Listener);
 		B1 = new JRadioButton("B1");
@@ -91,7 +91,7 @@ public class PitchGenerator {
 		G1.addActionListener(g1Listener);
 
 		// 2nd Octave
-		A2 = new JRadioButton("A2", true);
+		A2 = new JRadioButton("A2");
 		A2Listener a2Listener = new A2Listener();
 		A2.addActionListener(a2Listener);
 		B2 = new JRadioButton("B2");
@@ -114,7 +114,7 @@ public class PitchGenerator {
 		G2.addActionListener(g2Listener);
 
 		// 3rd Octave
-		A3 = new JRadioButton("A3", true);
+		A3 = new JRadioButton("A3");
 		A3Listener a3Listener = new A3Listener();
 		A3.addActionListener(a3Listener);
 		B3 = new JRadioButton("B3");
@@ -160,7 +160,7 @@ public class PitchGenerator {
 		G4.addActionListener(g4Listener);
 
 		// 5th Octave
-		A5 = new JRadioButton("A5", true);
+		A5 = new JRadioButton("A5");
 		A5Listener a5Listener = new A5Listener();
 		A5.addActionListener(a5Listener);
 		B5 = new JRadioButton("B5");
@@ -183,7 +183,7 @@ public class PitchGenerator {
 		G5.addActionListener(g5Listener);
 
 		// 6th Octave
-		A6 = new JRadioButton("A6", true);
+		A6 = new JRadioButton("A6");
 		A6Listener a6Listener = new A6Listener();
 		A6.addActionListener(a6Listener);
 		B6 = new JRadioButton("B6");
@@ -206,7 +206,7 @@ public class PitchGenerator {
 		G6.addActionListener(g6Listener);
 
 		// 7th Octave
-		A7 = new JRadioButton("A7", true);
+		A7 = new JRadioButton("A7");
 		A7Listener a7Listener = new A7Listener();
 		A7.addActionListener(a7Listener);
 		B7 = new JRadioButton("B7");
@@ -229,7 +229,7 @@ public class PitchGenerator {
 		G7.addActionListener(g7Listener);
 
 		// 8th OCtave
-		A8 = new JRadioButton("A8", true);
+		A8 = new JRadioButton("A8");
 		A8Listener a8Listener = new A8Listener();
 		A8.addActionListener(a8Listener);
 		B8 = new JRadioButton("B8");
